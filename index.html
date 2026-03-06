@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riyadh Al Mahmud | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-950 text-gray-300 font-sans antialiased flex flex-col min-h-screen relative overflow-x-hidden">
+
+    <div id="particles-js" class="fixed inset-0 z-0 bg-gray-950"></div>
+
+    <nav class="fixed w-full border-b border-gray-800/50 bg-gray-950/80 backdrop-blur-md z-50">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center relative z-20">
+            <a href="#" class="text-xl font-bold text-white tracking-wider">Riyadh<span class="text-emerald-500">.</span></a>
+            <div class="space-x-6 text-sm font-medium">
+                <a href="#about" class="hover:text-emerald-400 transition-colors">About</a>
+                <a href="#certificates" class="hover:text-emerald-400 transition-colors">Certifications</a>
+                <a href="https://www.freelancers.gov.bd/verify/b908df82-106d-49bd-bfe8-2078af54ab59-sh-1769079379-y-1103dfcab29670d43c778a401b599486252a9638-a-m-143599a8f4ed919f38c8b21da3294a196728e43b" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-400 transition-colors hidden md:inline">Freelancer ID</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="flex-grow pt-24 relative z-10">
+        
+        <section id="about" class="max-w-4xl mx-auto px-6 py-12 md:py-20 flex flex-col justify-center items-start min-h-[75vh]">
+            <p class="text-emerald-500 font-mono text-sm mb-4">Hi, my name is</p>
+            <h1 class="text-5xl md:text-7xl font-extrabold text-white tracking-tight mb-6">
+                Riyadh Al Mahmud.
+            </h1>
+            <h2 class="text-3xl md:text-5xl font-bold text-gray-500 mb-8">
+                I build systems and software.
+            </h2>
+            <p class="text-lg text-gray-400 max-w-2xl leading-relaxed mb-10">
+                I am a <span class="text-emerald-400 font-semibold">Computer Science graduate</span> from the University of the People. Having earned my degree with <span class="text-emerald-400">High Honors</span>, I specialize in building custom network infrastructure and solving complex software problems.
+            </p>
+            <button id="open-modal" class="inline-block px-8 py-3 border border-emerald-500 text-emerald-500 rounded hover:bg-emerald-500/10 transition-colors font-mono text-sm">
+                Get In Touch
+            </button>
+        </section>
+
+        <section id="certificates" class="max-w-6xl mx-auto px-6 py-24 fade-in-section opacity-0 translate-y-8 transition-all duration-1000 ease-out delay-200">
+            <div class="flex items-center mb-12">
+                <h3 class="text-3xl font-bold text-white tracking-tight">Certifications</h3>
+                <div class="h-px bg-gray-800 flex-grow ml-6"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <div class="border border-emerald-500 bg-gray-900/80 backdrop-blur-md rounded-lg p-6 shadow-[0_0_15px_rgba(16,185,129,0.1)] hover:border-emerald-400 transition-all duration-300 flex flex-col h-full group">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="w-10 h-10 bg-emerald-500/10 rounded-lg flex items-center justify-center text-emerald-500 border border-emerald-500/20">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 14l9-5-9-5-9 5 9 5z"/><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"/></svg>
+                        </div>
+                        <a href="associates-degree.jpg" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-emerald-400 transition-colors">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" /></svg>
+                        </a>
+                    </div>
+                    <div class="flex flex-wrap items-center gap-2 mb-2">
+                        <h4 class="text-lg font-bold text-gray-200 group-hover:text-emerald-400 transition-colors">A.S. in Computer Science</h4>
+                        <span class="text-[10px] bg-emerald-500/20 text-emerald-400 px-2 py-0.5 rounded-full border border-emerald-500/30 uppercase tracking-widest font-bold">High Honors</span>
+                    </div>
+                    <p class="text-sm text-emerald-500/80 mb-4 font-mono">University of the People • Jan 2026</p>
+                    <p class="text-sm text-gray-400 leading-relaxed flex-grow">
+                        Formal academic foundation in computer science, covering programming, data structures, and system architecture.
+                    </p>
+                </div>
+
+                <div class="border border-gray-800 bg-gray-900/80 backdrop-blur-md rounded-lg p-6 hover:border-emerald-500/50 transition-all duration-300 flex flex-col h-full group">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="w-10 h-10 bg-emerald-500/10 rounded-lg flex items-center justify-center text-emerald-500 border border-emerald-500/20">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                        </div>
+                        <a href="https://coursera.org/share/10a3384c0ab27c38b215474e10bf0af0" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-emerald-400 transition-colors">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                        </a>
+                    </div>
+                    <h4 class="text-lg font-bold text-gray-200 mb-2 group-hover:text-emerald-400 transition-colors">Google IT Support</h4>
+                    <p class="text-sm text-emerald-500/80 mb-4 font-mono">Coursera Professional Certificate</p>
+                    <p class="text-sm text-gray-400 leading-relaxed flex-grow">
+                        Foundations of technical support, networking, operating systems, and IT security.
+                    </p>
+                </div>
+
+                <div class="border border-gray-800 bg-gray-900/80 backdrop-blur-md rounded-lg p-6 hover:border-emerald-500/50 transition-all duration-300 flex flex-col h-full group">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="w-10 h-10 bg-emerald-500/10 rounded-lg flex items-center justify-center text-emerald-500 border border-emerald-500/20">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"/></svg>
+                        </div>
+                        <a href="https://coursera.org/share/b5e19f71318f88811cd9bf9e88c42028" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-emerald-400 transition-colors">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                        </a>
+                    </div>
+                    <h4 class="text-lg font-bold text-gray-200 mb-2 group-hover:text-emerald-400 transition-colors">Google UX Design</h4>
+                    <p class="text-sm text-emerald-500/80 mb-4 font-mono">Coursera Professional Certificate</p>
+                    <p class="text-sm text-gray-400 leading-relaxed flex-grow">
+                        End-to-end design process: empathizing, defining, ideating, wireframing, and prototyping.
+                    </p>
+                </div>
+
+                <div class="border border-gray-800 bg-gray-900/80 backdrop-blur-md rounded-lg p-6 hover:border-emerald-500/50 transition-all duration-300 flex flex-col h-full group">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="w-10 h-10 bg-emerald-500/10 rounded-lg flex items-center justify-center text-emerald-500 border border-emerald-500/20">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg>
+                        </div>
+                        <a href="https://coursera.org/share/b0e065084677d810433bc9861e33c926" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-emerald-400 transition-colors">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                        </a>
+                    </div>
+                    <h4 class="text-lg font-bold text-gray-200 mb-2 group-hover:text-emerald-400 transition-colors">Google Digital Marketing</h4>
+                    <p class="text-sm text-emerald-500/80 mb-4 font-mono">Coursera Professional Certificate</p>
+                    <p class="text-sm text-gray-400 leading-relaxed flex-grow">
+                        Skills in SEO, SEM, and customer loyalty to build digital presence.
+                    </p>
+                </div>
+
+                <div class="border border-gray-800 bg-gray-900/80 backdrop-blur-md rounded-lg p-6 hover:border-emerald-500/50 transition-all duration-300 flex flex-col h-full group">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="w-10 h-10 bg-emerald-500/10 rounded-lg flex items-center justify-center text-emerald-500 border border-emerald-500/20">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+                        </div>
+                        <a href="https://coursera.org/share/62829d455419e81dfaa33c66d4e9c9d7" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-emerald-400 transition-colors">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                        </a>
+                    </div>
+                    <h4 class="text-lg font-bold text-gray-200 mb-2 group-hover:text-emerald-400 transition-colors">IBM Data Science</h4>
+                    <p class="text-sm text-emerald-500/80 mb-4 font-mono">Coursera Professional Certificate</p>
+                    <p class="text-sm text-gray-400 leading-relaxed flex-grow">
+                        Proficiency in Python, SQL, and machine learning to develop data-driven solutions.
+                    </p>
+                </div>
+
+                <div class="border border-gray-800 bg-gray-900/80 backdrop-blur-md rounded-lg p-6 hover:border-emerald-500/50 transition-all duration-300 flex flex-col h-full group">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="w-10 h-10 bg-emerald-500/10 rounded-lg flex items-center justify-center text-emerald-500 border border-emerald-500/20">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"/></svg>
+                        </div>
+                        <a href="https://coursera.org/share/e86763e8c346b68de319abac34e0da72" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-emerald-400 transition-colors">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                        </a>
+                    </div>
+                    <h4 class="text-lg font-bold text-gray-200 mb-2 group-hover:text-emerald-400 transition-colors">Google Project Management</h4>
+                    <p class="text-sm text-emerald-500/80 mb-4 font-mono">Coursera Professional Certificate</p>
+                    <p class="text-sm text-gray-400 leading-relaxed flex-grow">
+                        Management methodologies including Agile, Scrum, and Waterfall.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="contact" class="border-t border-gray-900 bg-gray-950 mt-auto relative z-10">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">
+            <p>&copy; 2026 Riyadh Al Mahmud. Based in Manikganj, Bangladesh.</p>
+            <div class="flex flex-wrap justify-center space-x-6 mt-4 md:mt-0">
+                <a href="https://github.com/r7riyadh" target="_blank" class="hover:text-emerald-400 transition-colors">GitHub</a>
+                <a href="https://www.linkedin.com/in/r7riyadh/" target="_blank" class="hover:text-emerald-400 transition-colors">LinkedIn</a>
+                <a href="https://www.freelancers.gov.bd/verify/b908df82-106d-49bd-bfe8-2078af54ab59-sh-1769079379-y-1103dfcab29670d43c778a401b599486252a9638-a-m-143599a8f4ed919f38c8b21da3294a196728e43b" target="_blank" class="hover:text-emerald-400 transition-colors font-bold text-emerald-500/80">Freelancer ID</a>
+                <a href="mailto:r7riyadh@gmail.com" class="hover:text-emerald-400 transition-colors">Email</a>
+            </div>
+        </div>
+    </footer>
+
+    <div id="contact-modal" class="fixed inset-0 z-[100] hidden items-center justify-center px-6">
+        <div id="modal-backdrop" class="absolute inset-0 bg-gray-950/60 backdrop-blur-sm"></div>
+        <div class="relative bg-gray-900 border border-emerald-500 p-8 rounded-lg shadow-2xl max-w-sm w-full animate-in fade-in zoom-in duration-300">
+            <button id="close-modal" class="absolute top-4 right-4 text-gray-500 hover:text-white transition-colors">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
+            </button>
+            <h3 class="text-2xl font-bold text-white mb-6 text-center">Connect With Me</h3>
+            <div class="space-y-4">
+                <a href="https://www.linkedin.com/in/r7riyadh/" target="_blank" class="flex items-center justify-center gap-3 w-full py-3 bg-emerald-500/10 border border-emerald-500 text-emerald-500 rounded hover:bg-emerald-500 hover:text-white transition-all font-medium">
+                    LinkedIn
+                </a>
+                <a href="mailto:r7riyadh@gmail.com" class="flex items-center justify-center gap-3 w-full py-3 bg-gray-800 border border-gray-700 text-gray-300 rounded hover:border-emerald-500 hover:text-emerald-400 transition-all font-medium">
+                    Email Me
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
