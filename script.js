@@ -58,4 +58,31 @@ document.addEventListener("DOMContentLoaded", () => {
             toggleModal();
         }
     });
+
+    // NEW Email Copy Functionality
+    const copyEmailBtn = document.getElementById('copy-email-btn');
+    
+    if (copyEmailBtn) {
+        copyEmailBtn.addEventListener('click', () => {
+            const emailAddress = 'r7riyadh@gmail.com';
+            
+            // The Clipboard API copies the text to the user's device
+            navigator.clipboard.writeText(emailAddress).then(() => {
+                // Save the original text to revert back later
+                const originalText = copyEmailBtn.innerText;
+                
+                // Update the button text and color to show success
+                copyEmailBtn.innerText = 'Email Copied!';
+                copyEmailBtn.classList.add('text-emerald-400', 'border-emerald-500');
+                
+                // Change it back to normal after 2 seconds
+                setTimeout(() => {
+                    copyEmailBtn.innerText = originalText;
+                    copyEmailBtn.classList.remove('text-emerald-400', 'border-emerald-500');
+                }, 2000);
+            }).catch(err => {
+                console.error('Failed to copy email: ', err);
+            });
+        });
+    }
 });
