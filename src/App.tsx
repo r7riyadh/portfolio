@@ -36,10 +36,10 @@ const App: FC = () => {
   useEffect(() => {
     loadData();
 
-    // Enforce minimum loader duration of 3500ms
+    // Enforce minimum loader duration of 6500ms
     const timer = setTimeout(() => {
       setLoadingScreen(false);
-    }, 3500);
+    }, 6500);
 
     return () => clearTimeout(timer);
   }, []);

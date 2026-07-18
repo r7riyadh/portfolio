@@ -16,7 +16,7 @@ export const GitCommitLoader: FC = () => {
       } else {
         clearInterval(interval);
       }
-    }, 800); // 800ms * 4 steps = 3200ms
+    }, 1500); // 1500ms * 4 steps = 6000ms
     return () => clearInterval(interval);
   }, []);
 
@@ -25,7 +25,7 @@ export const GitCommitLoader: FC = () => {
       key="git-commit-loader"
       initial={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      transition={{ duration: 0.8, ease: "easeInOut" }}
+      transition={{ duration: 1.0, ease: "easeInOut" }}
       className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-alabaster-grey-50 select-none pointer-events-auto"
     >
       <div className="flex items-center gap-6">
@@ -39,7 +39,7 @@ export const GitCommitLoader: FC = () => {
             className="absolute left-0 h-[1px] bg-ink-black-900"
             initial={{ width: 0 }}
             animate={{ width: "100%" }}
-            transition={{ duration: 3.2, ease: "easeInOut" }}
+            transition={{ duration: 6.0, ease: "easeInOut" }}
           />
 
           {/* Pulsing nodes */}
@@ -48,28 +48,28 @@ export const GitCommitLoader: FC = () => {
             className="absolute left-[25%] -translate-x-1/2 w-2 h-2 rounded-full bg-ink-black-900"
             initial={{ scale: 0, opacity: 0 }}
             animate={{ scale: [0, 1.3, 1], opacity: 1 }}
-            transition={{ delay: 0.8, duration: 0.4 }}
+            transition={{ delay: 1.5, duration: 0.45 }}
           />
           {/* Node 2 */}
           <motion.div
             className="absolute left-[50%] -translate-x-1/2 w-2 h-2 rounded-full bg-ink-black-900"
             initial={{ scale: 0, opacity: 0 }}
             animate={{ scale: [0, 1.3, 1], opacity: 1 }}
-            transition={{ delay: 1.6, duration: 0.4 }}
+            transition={{ delay: 3.0, duration: 0.45 }}
           />
           {/* Node 3 */}
           <motion.div
             className="absolute left-[75%] -translate-x-1/2 w-2 h-2 rounded-full bg-ink-black-900"
             initial={{ scale: 0, opacity: 0 }}
             animate={{ scale: [0, 1.3, 1], opacity: 1 }}
-            transition={{ delay: 2.4, duration: 0.4 }}
+            transition={{ delay: 4.5, duration: 0.45 }}
           />
           {/* Node 4 */}
           <motion.div
             className="absolute left-[100%] -translate-x-1/2 w-2 h-2 rounded-full bg-ink-black-900"
             initial={{ scale: 0, opacity: 0 }}
             animate={{ scale: [0, 1.3, 1], opacity: 1 }}
-            transition={{ delay: 3.2, duration: 0.4 }}
+            transition={{ delay: 6.0, duration: 0.45 }}
           />
         </div>
 
