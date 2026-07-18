@@ -36,6 +36,11 @@ const App: FC = () => {
   useEffect(() => {
     loadData();
 
+    // Clear any existing URL hash (e.g. from previous sessions)
+    if (window.location.hash) {
+      window.history.replaceState(null, '', window.location.pathname + window.location.search);
+    }
+
     // Enforce minimum loader duration of 2500ms
     const timer = setTimeout(() => {
       setLoadingScreen(false);
@@ -61,8 +66,6 @@ const App: FC = () => {
         if (entry.isIntersecting && !isScrolling.current) {
           const id = entry.target.id;
           setActiveTab(id);
-          // Silently update hash to match current section for deep linking support
-          window.history.replaceState(null, '', `#/${id}`);
         }
       });
     }, observerOptions);
@@ -75,26 +78,9 @@ const App: FC = () => {
     return () => observer.disconnect();
   }, [portfolioData]);
 
-  // Deep Link scrolling on load
-  useEffect(() => {
-    if (portfolioData && !loadingScreen) {
-      const hash = window.location.hash.replace('#/', '').replace('#', '');
-      const validSections = ['home', 'experiences', 'projects', 'credentials', 'social'];
-      if (validSections.includes(hash)) {
-        setTimeout(() => {
-          const el = document.getElementById(hash);
-          if (el) {
-            el.scrollIntoView({ behavior: 'smooth' });
-          }
-        }, 400);
-      }
-    }
-  }, [portfolioData, loadingScreen]);
-
   const handleTabChange = (tabId: string) => {
     isScrolling.current = true;
     setActiveTab(tabId);
-    window.history.replaceState(null, '', `#/${tabId}`);
     const el = document.getElementById(tabId);
     if (el) {
       el.scrollIntoView({ behavior: 'smooth' });
