@@ -6,7 +6,7 @@ export const Home: FC = () => {
     <motion.div
       initial={{ opacity: 0, y: 15 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1.2, ease: "easeOut", delay: 0.6 }}
+      transition={{ duration: 1.2, ease: "easeOut", delay: 0.3 }}
       className="max-w-4xl mx-auto flex flex-col justify-center items-center text-center min-h-[60vh] md:min-h-[65vh] py-12 space-y-4"
     >
       {/* Intro Greetings */}

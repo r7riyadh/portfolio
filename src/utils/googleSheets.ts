@@ -4,10 +4,11 @@ import { CMS_URLS } from '../config';
 
 export async function fetchCsvData(url: string): Promise<any[]> {
   const controller = new AbortController();
-  const timeoutId = setTimeout(() => controller.abort(), 6000);
+  const timeoutId = setTimeout(() => controller.abort(), 3500);
 
   try {
-    const response = await fetch(url, { signal: controller.signal });
+    const cacheBusterUrl = `${url}&t=${Date.now()}`;
+    const response = await fetch(cacheBusterUrl, { signal: controller.signal });
     clearTimeout(timeoutId);
     if (!response.ok) {
       throw new Error(`Failed to fetch CSV from URL: ${url}`);

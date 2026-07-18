@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { 
   Home as HomeIcon,
   Briefcase, 
-  Code2,
+  Layers,
   GraduationCap, 
   Share2
 } from 'lucide-react';
@@ -35,7 +35,7 @@ export const Layout: FC<LayoutProps> = ({
   const menuItems = [
     { id: 'home', label: 'Home', icon: HomeIcon },
     { id: 'experiences', label: 'Experiences', icon: Briefcase },
-    { id: 'projects', label: 'Projects', icon: Code2 },
+    { id: 'projects', label: 'Projects', icon: Layers },
     { id: 'credentials', label: 'Credentials', icon: GraduationCap },
     { id: 'social', label: 'Social', icon: Share2 },
   ];
