@@ -1,32 +1,34 @@
-# React + TypeScript + Vite
+# riyadhalmahmud.tech - Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Live Deployment: [https://riyadhalmahmud.tech/](https://riyadhalmahmud.tech/)
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+This repository contains the source code for the professional portfolio of Riyadh Al Mahmud. The project is a highly optimized, responsive web application engineered to bridge the gap between software specifications and operational project execution.
 
-## React Compiler
+The system acts as a decoupled, headless architecture, dynamically sourcing its primary content data models from a remote spreadsheet infrastructure. This setup eliminates heavy database overhead to ensure rapid data syncs, minimal loading latencies, and total separation of concerns.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Core Technical Features
 
-## Expanding the Oxlint configuration
+* **Zero-Latency Static Engine:** Built utilizing Vite and TypeScript to ensure lightning-fast browser parsing and instantaneous layout rendering.
+* **Headless Data Pipeline:** Dynamically injects structured portfolio content from a managed Google Sheets backend API asynchronously.
+* **Automated CI/CD Pipeline:** Integrated via GitHub Actions to orchestrate seamless automated compilation and immediate production server deployment.
+* **Clean Data Layout:** Styled with utility modules via Tailwind CSS, strictly structured to prioritize text scannability and professional information hierarchy.
+* **Code Architecture Quality:** Validated and monitored via Oxlint to guarantee optimal static compilation and rigid code structure integrity.
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+## Development & Local Execution
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
+To clone the platform and initialize the development ecosystem locally, ensure you have Node.js installed:
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/r7riyadh/portfolio.git
+   cd portfolio/app
+   npm install
+   npm run dev
+   ```
+
+2. **Build for production:**
+   ```bash
+   npm run build
+   ```
